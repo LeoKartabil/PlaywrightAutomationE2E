@@ -1,0 +1,22 @@
+{
+  "name": "playwrightautomatione2e",
+  "version": "1.0.0",
+  "description": "Test automation with Playwright and NodeJS on the Demo Micro Focus Advantage Application Shopping",
+  "main": "index.js",
+  "scripts": {
+    "test:headless": "npx playwright test",
+    "test:ui": "playwright test --ui",
+    "test:report": "playwright show-report"
+  },
+  "keywords": [
+    "Playwright",
+    "Test automation",
+    "NodeJS"
+  ],
+  "author": "Leonardo Kartabil",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.46.1",
+    "@types/node": "^22.5.0"
+  }
+}
