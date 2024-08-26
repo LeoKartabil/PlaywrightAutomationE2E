@@ -4,21 +4,21 @@ export default class RegisterPage {
     constructor(page) {
         this.page = page
         this.url = 'https://www.advantageonlineshopping.com/#/register'
-        this.inputUsername = page.locator('input[name="usernameRegisterPage"]')
-        this.inputEmail = page.locator('input[name="emailRegisterPage"]')
-        this.inputPassword = page.locator('input[name="passwordRegisterPage"]')
-        this.inputConfirmPassword = page.locator('input[name="confirm_passwordRegisterPage"]')
-        this.inputFirstName = page.locator('input[name="first_nameRegisterPage"]')
-        this.inputLastName = page.locator('input[name="last_nameRegisterPage"]')
-        this.inputPhoneNumber = page.locator('input[name="phone_numberRegisterPage"]')
-        this.selectCountry = page.getByRole('listbox')
-        this.inputCity = page.locator('input[name="cityRegisterPage"]')
-        this.inputAddress = page.locator('input[name="addressRegisterPage"]')
-        this.inputState = page.locator('input[name="state_\\/_province_\\/_regionRegisterPage"]')
-        this.inputPostalCode = page.locator('input[name="postal_codeRegisterPage"]')
-        this.checkAllowOffersPromotion = page.locator('input[name="allowOffersPromotion"]')
-        this.checkIAgree = page.locator('input[name="i_agree"]')
-        this.buttonRegister = page.getByRole('button', { name: 'REGISTER' })
+        this.inputUsername =                page.locator('input[name="usernameRegisterPage"]')
+        this.inputEmail =                   page.locator('input[name="emailRegisterPage"]')
+        this.inputPassword =                page.locator('input[name="passwordRegisterPage"]')
+        this.inputConfirmPassword =         page.locator('input[name="confirm_passwordRegisterPage"]')
+        this.inputFirstName =               page.locator('input[name="first_nameRegisterPage"]')
+        this.inputLastName =                page.locator('input[name="last_nameRegisterPage"]')
+        this.inputPhoneNumber =             page.locator('input[name="phone_numberRegisterPage"]')
+        this.selectCountry =                page.getByRole('listbox')
+        this.inputCity =                    page.locator('input[name="cityRegisterPage"]')
+        this.inputAddress =                 page.locator('input[name="addressRegisterPage"]')
+        this.inputState =                   page.locator('input[name="state_\\/_province_\\/_regionRegisterPage"]')
+        this.inputPostalCode =              page.locator('input[name="postal_codeRegisterPage"]')
+        this.checkAllowOffersPromotion =    page.locator('input[name="allowOffersPromotion"]')
+        this.checkIAgree =                  page.locator('input[name="i_agree"]')
+        this.buttonRegister =               page.getByRole('button', { name: 'REGISTER' })
     }
 
     async goTo() {
