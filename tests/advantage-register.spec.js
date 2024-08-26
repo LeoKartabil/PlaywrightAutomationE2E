@@ -1,6 +1,12 @@
-const { test, expect } = require('@playwright/test');
+const { test } = require('@playwright/test')
+const { RegisterPage } = require('../pages/register.page')
+const { createValidUser } = require('../data/user.factory')
 
-test('has title', async () => {
-    await page.goto('https://www.advantageonlineshopping.com/#/register');
-    await page.expect(page).toHaveTitle('CREATE ACCOUNT')
+test('Cadastrar usuário com sucesso', { tag: ['@Register', '@UI', '@Regression' ] }, async ({page}) => {
+    const registerPage = new RegisterPage(page)
+    const validUser = await createValidUser()
+
+    await registerPage.goTo()
+    await registerPage.registerUser(validUser)
+    await registerPage.validateRegistration()
 });
